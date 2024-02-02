@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 
+
 function MovieItem({ movie }) {
   const { title, poster, _id } = movie;
 
