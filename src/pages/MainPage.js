@@ -24,7 +24,7 @@ function MainPage() {
     }
 
     // make a POST request to the backend
-    const res = await axios.post("http://localhost:4000/api/users/signin", {
+    const res = await axios.post("https://movie-backend-o93w.onrender.com/api/users/signin", {
       email: emailInputRef.current.value,
       password: passwordInputRef.current.value,
     });
@@ -46,7 +46,7 @@ function MainPage() {
     }
 
     // make a POST request to the backend
-    const res = await axios.post("http://localhost:4000/api/users/signup", {
+    const res = await axios.post("https://movie-backend-o93w.onrender.com/api/users/signup", {
       email: emailInputRef.current.value,
       password: passwordInputRef.current.value,
     });

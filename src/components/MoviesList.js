@@ -12,6 +12,7 @@ function MoviesList({ movies }) {
   return (
     // <div style={{backgroundColor: theme === 'light' ? '#fff': '#000'}}>
     <div className={theme === 'light' ? 'lightMode': 'darkMode'}>
+      <h1>Movies List Component</h1>
       <div>
         {movies.length >= 1 ? (
           movies.map((movie) => <MovieItem movie={movie} key={movie._id} />)
